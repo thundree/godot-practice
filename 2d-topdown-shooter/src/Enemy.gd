@@ -6,7 +6,7 @@ func _ready():
 	pass # Replace with function body.
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var Player = get_parent().get_node("Player")
 	
 	position += (Player.position - position) / 50
